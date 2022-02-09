@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #67a5d4;
+}
+
+.card {
+  position: relative;
+  width: 60px;
+  background: #fff;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+  transition: width 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.card.active {
+  width: 280px;
+}
+
+.navigation {
+  position: relative;
+}
+
+/* .navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+.navigation li {
+  list-style: none;
+  padding: 15px;
+  height: 60px;
+  white-space: nowrap;
+}
+
+.navigation li:hover {
+  background: #ebe9e9;
+  transition: background 0.5s;
+}
+
+.navigation li:hover:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
+
+.navigation li:hover:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+
+.navigation li a {
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #67a5d4;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s;
+}
+
+.navigation li a ion-icon {
+  font-size: 1.6em;
+  margin-right: 15px;
+}
+
+.toogle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%) rotate(-0.25turn);
+  right: -25px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: solid 5px #67a5d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* transform: ; */
+  z-index: 10;
+}
+
+.toogle ion-icon {
+  color: #67a5d4;
+  font-size: 1.4em;
+  font-weight: bold;
+  transition: transform ease-in-out 0.5s;
+}
+
+.card.active .toogle ion-icon {
+  transform: rotate(0.5turn);
+}
