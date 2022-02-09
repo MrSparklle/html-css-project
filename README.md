@@ -9,3 +9,6 @@ https://user-images.githubusercontent.com/992049/153274060-e3c794ed-f79d-4aed-8b
 https://user-images.githubusercontent.com/992049/153274072-729239e7-de0c-4628-8f3b-73bb2c4d2169.mov
 
 
+See my others HTML/CSS projects:
+
+https://github.com/MrSparklle/starbucks-html-css
