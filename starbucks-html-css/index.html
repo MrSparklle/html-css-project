@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Starbuck HTML CSS</title>
+</head>
+
+<body>
+  <div class="background">
+    <div class='main-image'><img src="images/img1.png" alt=""></div>
+  </div>
+  <ul class="social-media">
+    <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+    <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+    <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+  </ul>
+  <header class="main-header">
+    <div>
+      <a href="index.html" class="main-header__brand">
+        <img src="images/logo.png" alt="Starbucks">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="#">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Menu</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">What's New</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-content">
+      <h1>It's not just Coffe<br>
+        It's <span>Starbucks</span></h1>
+      <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus
+        aspernatur quia laudantium
+        beatae consectetur fugiat, vel voluptate quibusdam perspiciatis, enim corporis in pariatur a cumque
+        necessitatibus
+        temporibus officia consequatur.</div>
+      <div class="cta">
+        <a href="start-hosting.html">Learn More</a>
+      </div>
+      <ul class="thumbs">
+        <li><img src="images/thumb1.png" alt=""></li>
+        <li><img src="images/thumb2.png" alt=""></li>
+        <li><img src="images/thumb3.png" alt=""></li>
+      </ul>
+    </section>
+  </main>
+</body>
+<script type="text/javascript">
+  const background = document.querySelector('.background');
+  const color = ['green', 'pink', 'deeppink'];
+  const elements = Array.from(document.querySelector('.thumbs').children);
+
+  elements.map((li, i) => {
+
+    li.onclick = () => {
+      background.style.background = color[i];
+      background.getElementsByTagName('img')[0].src = `images/img${i + 1}.png`;
+    }
+
+  })
+
+  // exemplo basico de uso de reduce, só ilustrado, náo tem uso aqui.
+  const valores = [2, 4, 6];
+  const total = valores.reduce((val, acc) => {
+    return acc + val;
+  })
+  console.log(total);
+</script>
+
+</html>

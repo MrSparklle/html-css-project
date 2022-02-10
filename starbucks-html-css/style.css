@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  list-style: none;
+}
+
+.background {
+  position: absolute;
+  background: green;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  right: -700px;
+  top: 300px;
+}
+
+.social-media {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 450px;
+  right: 0px;
+}
+
+.social-media li {
+  list-style: none;
+  filter: invert();
+}
+
+.social-media li a {
+  display: inline-block;
+  margin: 1rem;
+  transform: scale(0.6);
+}
+
+.social-media li a:hover {
+  filter: opacity(50%);
+}
+
+.main-header {
+  display: flex;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav__items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav__items li {
+  margin: 0 1rem;
+}
+
+.main-nav__items li a {
+  text-decoration: none;
+  color: #6e6e6e;
+}
+
+.main-nav__items li a:hover {
+  color: #b3b3b3;
+}
+
+.main-content {
+  padding: 5rem 5rem;
+}
+
+.main-content h1 {
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+
+.main-content h1 span {
+  font-weight: 700;
+  color: green;
+}
+
+.main-content .description {
+  line-height: 1.8rem;
+  width: 60%;
+  color: #6e6e6e;
+}
+
+.main-content .cta {
+  margin-top: 2rem;
+  background: green;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.main-content .cta:hover {
+  filter: opacity(70%);
+}
+
+.main-content .cta a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 3rem;
+  flex-shrink: 1;
+}
+
+.main-image {
+  width: 360px;
+  /* height: auto; */
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbs {
+  margin-top: 4rem;
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.thumbs li {
+  margin: 1rem;
+  transform: scale(0.7);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.thumbs li:hover {
+  transform: scale(0.7) translateY(-20px);
+}
